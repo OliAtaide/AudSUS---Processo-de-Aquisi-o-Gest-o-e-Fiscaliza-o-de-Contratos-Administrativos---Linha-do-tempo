@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+    font-family: "Jost", sans-serif;
+}
+
+.navbar {
+    background-color: #f1f5ff;
+    color: #5c6471;
+}
+
+.title {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 18px;
+    color: #113154;
+}
+
+.event {
+    background-image: url("./block.png");
+    background-repeat: no-repeat;
+    width: 620px;
+    height: 320px;
+    padding: 2em 8em 2.5em 2em;
+    background-size: contain;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    .event-body {
+        margin-top: auto;
+    }
+
+    .event-title {
+        font-size: 56px;
+        font-weight: 700;
+    }
+
+    .event-text {
+        font-size: 18px;
+    }
+
+    .event-title,
+    .event-text {
+        font-family: "Inter", sans-serif;
+    }
+
+    .event-button {
+        border-radius: 50%;
+        background: #8395c8;
+        width: 48px;
+        height: 48px;
+        font-size: 32px;
+        text-align: center;
+        color: white;
+        margin-left: auto;
+    }
+}
+
+.swiper {
+    margin: 2em 0;
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin: 48px 0;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: unset;
+        background-color: #8395c8;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+
+        &::after {
+            font-family: "bootstrap-icons";
+            font-size: 20px;
+            color: white;
+        }
+    }
+
+    .swiper-button-next::after {
+        content: "\F285";
+    }
+
+    .swiper-button-prev::after {
+        content: "\F284";
+    }
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    position: unset;
+
+    .swiper-pagination-bullet {
+        font-family: "Open Sans", sans-serif;
+        width: 24px;
+        height: 24px;
+        background-color: white;
+        border: 4px solid #295aa2;
+        padding: 0;
+        cursor: pointer;
+
+        .label {
+            margin-top: 24px;
+            text-align: center;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    padding: 1em 3em;
+    border-top: 2px solid #295aa2;
+
+    .logos {
+        margin: 0 auto;
+    }
+}
