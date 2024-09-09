@@ -19,22 +19,20 @@
 .event {
     background-image: url("./block.png");
     background-repeat: no-repeat;
-    width: 620px;
-    height: 320px;
-    padding: 2em 8em 2.5em 2em;
+    width: 678px;
+    height: 375px;
+    padding: 2.5em 6em 2.5em 2em;
     background-size: contain;
     position: relative;
     color: white;
     display: flex;
     flex-direction: column;
 
-    .event-body {
-        margin-top: auto;
-    }
-
     .event-title {
         font-size: 56px;
         font-weight: 700;
+        line-height: 1;
+        margin-bottom: 0.2em;
     }
 
     .event-text {
@@ -47,6 +45,7 @@
     }
 
     .event-button {
+        margin-top: auto;
         border-radius: 50%;
         background: #8395c8;
         width: 48px;
@@ -55,6 +54,9 @@
         text-align: center;
         color: white;
         margin-left: auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
 

@@ -2,12 +2,14 @@ const eventos = [
   {
     ano: 1862,
     texto:
-      "O Decreto 2.296/1862 início da abordagem de licitações no Brasil/Ministério da Agricultura, Comércio e Obras Públicas. Clique aqui",
+      "O Decreto 2.296/1862 início da abordagem de licitações no Brasil/Ministério da Agricultura, Comércio e Obras Públicas.",
+    link: "https://www2.camara.leg.br/legin/fed/decret/1824-1899/decreto-2926-14-maio-1862-555553-publicacaooriginal-74857-pe.html",
   },
   {
     ano: 1967,
     texto:
-      'Decreto-Lei 200/1967 Reforma administrativa federal, mencionando pela primeira vez os "Princípios da Licitação". Nele, foram instruídos a concorrência, a tomada de preços e o convite como procedimentos prévios à contratação de serviços e à compra de bens e produtos. Clique aqui',
+      'Decreto-Lei 200/1967 Reforma administrativa federal, mencionando pela primeira vez os "Princípios da Licitação". Nele, foram instruídos a concorrência, a tomada de preços e o convite como procedimentos prévios à contratação de serviços e à compra de bens e produtos.',
+    link: "https://www.planalto.gov.br/ccivil_03/decreto-lei/del0200.htm",
   },
   {
     ano: 1993,
@@ -22,16 +24,21 @@ const eventos = [
   {
     ano: 2011,
     texto:
-      "A Lei 12.462 estabeleceu o Regime Diferenciado de Contratações (RDC) para atender a demandas de grandes eventos esportivos]  Clique aqui",
+      "A Lei 12.462 estabeleceu o Regime Diferenciado de Contratações (RDC) para atender a demandas de grandes eventos esportivos.",
+    link: "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/L12462.htm",
   },
   {
     ano: 2016,
-    texto: 'Entrou em vigor a Lei 13.303, denominada de "Lei da Responsabilidade das Estatais" ou simplesmente de "Lei das Estatais", e veio disciplinar a exploração direta de atividade econômica pelo Estado por intermédio de suas empresas públicas e sociedades de economia mista'
+    texto:
+      'Entrou em vigor a Lei 13.303, denominada de "Lei da Responsabilidade das Estatais" ou simplesmente de "Lei das Estatais", e veio disciplinar a exploração direta de atividade econômica pelo Estado por intermédio de suas empresas públicas e sociedades de economia mista.',
+    link: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13303.htm",
   },
   {
     ano: 2021,
-    texto: 'Lei 14.133/21 ou a Nova Lei de Licitações e Contratos Administrativos – NLLCA, resultado de um processo contínuo de aprimoramento e alinhamento das práticas governamentais com as demandas atuais, modernizou e atualizou os processos administrativos, incorporando princípios como sustentabilidade e inovação, promove inovações como gestão por competências e governança pública.  Clique aqui'
-  }
+    texto:
+      "Lei 14.133/21 ou a Nova Lei de Licitações e Contratos Administrativos – NLLCA, resultado de um processo contínuo de aprimoramento e alinhamento das práticas governamentais com as demandas atuais, modernizou e atualizou os processos administrativos, incorporando princípios como sustentabilidade e inovação, promove inovações como gestão por competências e governança pública.",
+    link: "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm",
+  },
 ];
 
 eventos.forEach((e) => {
@@ -47,9 +54,15 @@ eventos.forEach((e) => {
                     ${e.texto}
                 </div>
             </div>
-            <a type="button" class="event-button">
+            <div class="h-100 position-relative">
+            ${
+              e.link
+                ? `<a href="${e.link}" type="button" class="event-button" target="_blank">
                 <i class="bi bi-eye-fill"></i>
-            </a>
+            </a>`
+                : ""
+            }
+            </div>
         </div>
     </div>
     `
