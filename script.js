@@ -14,7 +14,7 @@ const eventos = [
   {
     ano: 1993,
     texto:
-      "A Lei 8.666/93 Sua relevância reside na criação de um ambiente regulatório para promover a honestidade e a competição no setor público.",
+      "A Lei 8.666/93 sua relevância reside na criação de um ambiente regulatório para promover a honestidade e a competição no setor público.",
   },
   {
     ano: 2002,
